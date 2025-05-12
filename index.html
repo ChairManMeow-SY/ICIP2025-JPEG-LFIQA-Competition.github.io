@@ -331,14 +331,20 @@
             <li>Each submission must include: 
               <ul>
                 <li>A summary of the proposed methodology.</li>
-                <li>Code or executable</li>
-                <li>Fact sheet</li>
+                <li>A platform-independent executable of the algorithm must be provided, including command-line parameters for evaluation. The executable should support directories (containing light fields of n by m views) and be capable of reading .ppm and .png file formats. An example of such datasets will be shared before the deadline.</li>
+                <li>Information about the training dataset and process used in the development of the objective method, when applicable.</li>
+                <li>For <b><i>full-reference submission track</i></b>: the command line must support at least two input directories: one for the reference light fields and one for the test light fields. An example of the command line:</li>
+                <code>./executable --reference_dir /path_to_ref_lightfields --test_dir /path_to_test_lightfields</code>
+                <li>For <b><i>no-reference submission track:</i></b>: the command line must support at least one input directory for the test light fields. For example:</li>
+                <code>./executable --test_dir /path_to_test_lightfields</code>
               </ul>
             </li>
-            <li>Proposals must be submitted by March 28, 2023.</li>
-            <li>Proposals will be reviewed by the Grand Challenge organizers and the NTIRE 2023 Grand Challenge jury.</li>
-            <li>Accepted participants will be notified by April 15, 2023.</li>
+            <li>Paper submission on the proposed objective quality metric is not mandatory but encouraged. Proponents shall present their methods at the Special Session organized at ICIP 2025.</li>
           </ul>
+
+          <p>A sample dataset will be provided to the participants, who must ensure that their code functions correctly with these sample datasets. Additionally, participants should be readily available to quickly address any issues that arise when running their executable.</p>
+          <p>The output of executing the command line should provide a quality score.</p>
+
         </div>
       </div>
     </div>
