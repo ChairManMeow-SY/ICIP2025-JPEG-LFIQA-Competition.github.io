@@ -81,7 +81,7 @@
   </div>
 </nav>
 
-<div style="background-image: url('./imgs/Anchorage_1.jpg'); background-size: cover;">
+<div style="background-image: url('./imgs/Anchorage_1.jpg'); background-size: cover; align-items: center;">
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -224,7 +224,7 @@
     /* 每个人的外层容器 */
     .person {
       /* 保证每行6个 */
-      flex: 0 0 calc(100% / 6 - 20px);
+      flex: 0 0 calc(100% / 4 - 20px);
       display: flex;
       justify-content: center;
     }
@@ -247,11 +247,12 @@
     }
     .figcaption {
       font-size: 12px;
+      color:black;
     }
     /* 响应式调整（例如屏幕较窄时每行显示3个） */
-    @media (max-width: 800px) {
+    @media (max-width: 760px) {
       .person {
-        flex: 0 0 calc(100% / 4 - 20px);
+        flex: 0 0 calc(100% / 3 - 20px);
       }
     }
   </style>
@@ -262,7 +263,7 @@
       <div class="circle">
         <img src="./imgs/sm2.jpg" alt="Saeed Mahmoudpour">
       </div>
-        <figcaption>Saeed Mahmoudpour<br>VUB | IMEC</figcaption>
+        <figcaption style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4);">Saeed Mahmoudpour<br>VUB | IMEC</figcaption>
       </figure>
     </div>
     <div class="person">
@@ -270,7 +271,7 @@
       <div class="circle">
         <img src="./imgs/Mylene.png" alt="Mylène C.Q. Farias">
       </div>
-        <figcaption>Mylène C.Q. Farias<br>TSU</figcaption>
+        <figcaption style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4);">Mylène C.Q. Farias<br>TSU</figcaption>
       </figure>
     </div>
     <div class="person">
@@ -278,7 +279,7 @@
       <div class="circle">
         <img src="./imgs/Shengyang.jpg" alt="Shengyang Zhao">
       </div>
-        <figcaption>Shengyang Zhao<br>IDT</figcaption>
+        <figcaption style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4);" >Shengyang Zhao<br>IDT</figcaption>
       </figure>
     </div>
     <div class="person">
@@ -286,7 +287,7 @@
       <div class="circle">
         <img src="./imgs/Peter_Schelkens.jpg" alt="Peter Schelkens">
       </div>
-        <figcaption>Peter Schelkens<br>VUB | IMEC </figcaption>
+        <figcaption style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.4);">Peter Schelkens<br>VUB | IMEC </figcaption>
       </figure>
     </div>
   </div>
