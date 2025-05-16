@@ -83,13 +83,13 @@
 </nav>
 -->
 
-<div style="background-image: url('./imgs/Anchorage_1.jpg'); background-size: cover; background-position: center; ">
+<div class="hero-div" style="background-image: url('./imgs/Anchorage_with_ICIP.jpg'); background-size: cover; background-position: center; ">
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="color: black;">ICIP 2025 | Grand Challenge: Objective Quality Assessment Methods for </br> Light field Coding Applications</h1>
+          <h1 class="title is-1 publication-title" >ICIP 2025 | Grand Challenge: Objective Quality Assessment Methods for </br> Light field Coding Applications</h1>
 <!--           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=sbiY97gAAAAJ&hl=en">Xin Li</a><sup>*1</sup>,</span>
@@ -149,7 +149,7 @@
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Call For Proposal</span>
+                  <span>Document</span>
                 </a>
               </span>
               <span class="link-block">
@@ -161,6 +161,26 @@
                   <span>ICIP 2025</span>
                 </a> 
               </span>
+              <span class="link-block">
+                <a href="https://jpeg.org/jpegpleno/lightfield.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <img src="./imgs/jpegpleno-logo.svg" width="20px" height="20px" alt="icon">
+                  </span>
+                  <span>JPEG Pleno Light Field</span>
+                </a> 
+              </span>
+              <span class="link-block">
+                <a href="./wg1n101166.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>JPEG Pleno CfP</span>
+                </a> 
+              </span>
+              </span>
+              
 
 <!--               <span class="link-block">
                 <a href=""
@@ -222,52 +242,7 @@
       <div class="column is-four-fifths">
         <h1 class="title is-3">Organizers</h2>
         <div class="content has-text-justified">
-  <style>
-    /* 外层容器，使用 Flex 布局，并自动换行 */
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* 居中对齐 */
-      gap: 10px;  /* 每个项目之间的间距 */
-      max-width: 1000px; /* 根据需要调整总宽度 */
-      margin: 0 auto;
-    }
-    /* 每个人的外层容器 */
-    .person {
-      /* 保证每行6个 */
-      flex: 0 0 calc(100% / 4 - 20px);
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
-    /* 圆形背景容器 */
-    .circle {
-      width: 100px;       /* 可调整圆形直径 */
-      height: 100px;
-      background-color: #add8e6; /* 圆形背景色 */
-      border-radius: 50%; /* 使容器变成圆形 */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    /* 图片样式 */
-    .circle img {
-      width: 95%;       /* 图片宽度占圆形的 90% */
-      height: 95%;      /* 图片高度占圆形的 90% */
-      object-fit: cover; /* 保持图片比例，超出部分自动裁剪 */
-      border-radius: 50%; /* 使图片也呈现圆形 */
-    }
-    .figcaption {
-      font-size: 12px;
-      color:black;
-    }
-    /* 响应式调整（例如屏幕较窄时每行显示3个） */
-    @media (max-width: 760px) {
-      .person {
-        flex: 0 0 calc(100% / 3 - 20px);
-      }
-    }
-  </style>
+ 
   <div class="container">
     <!-- 下面示例了12个照片，你需要将 src 替换为实际图片路径 -->
     <div class="person">
@@ -345,7 +320,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="rules">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -424,13 +399,29 @@
         <h2 class="title is-3">Datasets</h2>
         <div class="content has-text-justified">
           <p>The organizers have created a subjectively annotated dataset based on extensive subjective experiments with light fields of varying resolutions and baselines, including both dense and sparse representations. The dataset comprises natural and synthetic light fields compressed using state-of-the-art encoding techniques across multiple bitrates.</p>
-          <p>Proponents are required to submit the proposal requirements (summarized in section C) by the specified deadline. The organizing committee will compute the scores and evaluate their performance against the annotated dataset. After the deadline, the test dataset will be made publicly available for cross-validation.</p>
+          <p>Proponents are required to submit the proposal requirements (summarized in <a href="#rules">section above</a>) by the specified deadline. The organizing committee will compute the scores and evaluate their performance against the annotated dataset. After the deadline, the test dataset will be made publicly available for cross-validation.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
- 
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3"> One More Thing</h2>
+        <div class="content has-text-justified">
+          <p>We would also like to draw your attention to <a href="./wg1n101166.pdf"><u style="color: #3273dc;">a parallel call for proposals</u></a> under the JPEG standardization framework on Objective Light Field Quality Assessment. If your work aligns with the goals of this competition, we strongly encourage you to consider submitting to the JPEG initiative as well. </p>
+          <p>Any problems/questions or you want to know more details on this call, please contact the organizer by email: <b>Saeed.Mahmoudpour@vub.be</b> .</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+</section>
 
 
 <!--
@@ -487,10 +478,10 @@
     <div class="content has-text-centered">
       <a class="icon-link"
          href="">
-        <i class="fas fa-file-pdf"></i>
+        <img src="./imgs/jpegpleno-logo.svg" width="50" height="50">
       </a>
       <a class="icon-link" href="https://github.com/lixinustc" class="external-link" disabled>
-        <i class="fab fa-github"></i>
+        <img src="./imgs/ICIP_logo-removebg-preview.png" width="60" height="60">
       </a>
     </div>
     <div class="columns is-centered">

@@ -29,6 +29,10 @@ body {
 
 
 .publication-title {
+  color: white;
+  text-shadow:
+    2px 2px 0 #000000, /* 第一层阴影 */
+    4px 4px 0 #000000; /* 第二层阴影 */
 }
 
 .publication-banner {
@@ -154,4 +158,49 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+
+/* 外层容器，使用 Flex 布局，并自动换行 */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* 居中对齐 */
+  gap: 10px;  /* 每个项目之间的间距 */
+  max-width: 1000px; /* 根据需要调整总宽度 */
+  margin: 0 auto;
+}
+/* 每个人的外层容器 */
+.person {
+  /* 保证每行6个 */
+  flex: 0 0 calc(100% / 4 - 20px);
+  display: flex;
+  justify-content: center;
+}
+/* 圆形背景容器 */
+.circle {
+  width: 100px;       /* 可调整圆形直径 */
+  height: 100px;
+  background-color: #add8e6; /* 圆形背景色 */
+  border-radius: 50%; /* 使容器变成圆形 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 图片样式 */
+.circle img {
+  width: 95%;       /* 图片宽度占圆形的 90% */
+  height: 95%;      /* 图片高度占圆形的 90% */
+  object-fit: cover; /* 保持图片比例，超出部分自动裁剪 */
+  border-radius: 50%; /* 使图片也呈现圆形 */
+}
+.figcaption {
+  font-size: 12px;
+  color:black;
+}
+/* 响应式调整（例如屏幕较窄时每行显示3个） */
+@media (max-width: 760px) {
+  .person {
+    flex: 0 0 calc(100% / 3 - 20px);
+  }
 }
